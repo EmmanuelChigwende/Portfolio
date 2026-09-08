@@ -9,17 +9,17 @@ const Header = () => {
         </h1>
       </div>
       <div>
-        <ul className='flex cursor-pointer gap-3 text-[1.2rem] text-[#8695A7]'>
-            <li className='hover:text-[#E7EDF3]'>
+        <ul className='flex cursor-pointer  gap-10 text-[1.2rem] text-[#8695A7]'>
+            <li className='hover:text-[#E7EDF3] hover:underline'>
                 About
             </li>
-            <li className='hover:text-[#E7EDF3]'>
+            <li className='hover:text-[#E7EDF3] hover:underline'>
                 Projects
             </li>
-            <li className='hover:text-[#E7EDF3]'>
+            <li className='hover:text-[#E7EDF3] hover:underline'>
                 Learning
             </li>
-            <li className='hover:text-[#E7EDF3]'>
+            <li className='hover:text-[#E7EDF3] hover:underline'>
                 Contact
             </li>
         </ul>

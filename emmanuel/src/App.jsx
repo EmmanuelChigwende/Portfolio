@@ -9,7 +9,6 @@ const App = () => {
       <Header/>
       {/* <div className='underline w-full decoration-2 decoration-[#263340]'></div> */}
       <Home/>
-      <Footer/>
     </div>
   )
 }
