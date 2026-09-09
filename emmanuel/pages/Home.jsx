@@ -12,6 +12,7 @@ import cbz from "../images/cbz.png";
 import server from "../images/server.png";
 import subnet from "../images/subnet.png"
 
+
 const Home = () => {
   const heroleft = useRef();
   const heroright = useRef();
@@ -22,11 +23,14 @@ const Home = () => {
       heroleft.current,
       {
         x: -1000,
+        autoAlpha:0
       },
       {
         x: 0,
         duration: 1.2,
+        autoAlpha:1,
         ease: "power4",
+        delay:0.3
       },
     );
 
@@ -34,10 +38,12 @@ const Home = () => {
       heroright.current,
       {
         y: -1000,
+        autoAlpha:0
       },
       {
         y: 0,
         duration: 2,
+        autoAlpha:1,
         ease: "power4",
       },
     );
@@ -79,7 +85,7 @@ const Home = () => {
 
       {/* About section */}
 
-      <div className=" w-full h-[70vh]  grid grid-cols-2 justify-between mt-30">
+      <div className=" .about w-full h-[70vh]  grid grid-cols-2 justify-between mt-30">
         {/* left About section */}
         <div>
           <img
@@ -111,7 +117,7 @@ const Home = () => {
       </div>
 
       {/* projects section */}
-      <div className="min-h-[70vh] ">
+      <div className=" .projects min-h-[70vh] ">
         <div>
           <h1 className="text-[2rem] text-[#E7EDF3] font-extrabold mb-15">
             Projects
@@ -164,7 +170,7 @@ const Home = () => {
       </div>
       {/* Learning section */}
 
-      <div className="h-[60vh] grid grid-cols-2 justify-center items-center">
+      <div className=".learning h-[60vh] grid grid-cols-2 justify-center items-center">
           <div className="text-[2.5rem] flex justify-center items-center text-[#E7EDF3] font-extrabold">
             <h1>Whats Next</h1>
           </div>
@@ -179,7 +185,7 @@ const Home = () => {
           </div>
       </div>
       {/* contact section */}
-      <Footer />
+      <Footer  />
     </div>
   );
 };
