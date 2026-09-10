@@ -52,6 +52,7 @@ const Home = () => {
   return (
     <div className="h-[80vh]  w-full overflow-y-scroll scrollbar-none bg-[#0F1720]">
       {/* Hero section */}
+      <section id="home"></section>
       <div className=" w-full grid grid-cols-2 justify-between mt-20 ">
         {/* left section small statement */}
         <div>
@@ -85,6 +86,7 @@ const Home = () => {
 
       {/* About section */}
 
+      <section id="about"></section>
       <div className=" .about w-full h-[70vh]  grid grid-cols-2 justify-between mt-30">
         {/* left About section */}
         <div>
@@ -117,6 +119,7 @@ const Home = () => {
       </div>
 
       {/* projects section */}
+      <section id="projects"></section>
       <div className=" .projects min-h-[70vh] ">
         <div>
           <h1 className="text-[2rem] text-[#E7EDF3] font-extrabold mb-15">
@@ -169,7 +172,7 @@ const Home = () => {
         </div>
       </div>
       {/* Learning section */}
-
+      <section id="learning"></section>
       <div className=".learning h-[60vh] grid grid-cols-2 justify-center items-center">
           <div className="text-[2.5rem] flex justify-center items-center text-[#E7EDF3] font-extrabold">
             <h1>Whats Next</h1>
@@ -185,6 +188,7 @@ const Home = () => {
           </div>
       </div>
       {/* contact section */}
+      <section id="footer"></section>
       <Footer  />
     </div>
   );
