@@ -1,31 +1,32 @@
-import React from 'react'
+import React from "react";
 
 const Header = () => {
   return (
-    <div className='w-full flex justify-between pt-10 pb-10 max-lg:pt-5 max-lg:pb-5'>
+    <header className="w-full flex flex-col sm:flex-row items-center justify-between gap-4 py-5 sm:py-8">
       <div>
-        <h1 className='text-[#E7EDF3]  font-bold text-[1.2rem] cursor-pointer  hover:text-[#8695A7] max-lg:text-[1rem]'>
-            <a href="#home">EMMANUEL C</a>
+        <h1 className="text-[#E7EDF3] font-bold text-base sm:text-lg md:text-[1.2rem] cursor-pointer hover:text-[#8695A7]">
+          <a href="#home">EMMANUEL C</a>
         </h1>
       </div>
-      <div>
-        <ul className='flex cursor-pointer  gap-10 text-[1.2rem] text-[#8695A7] max-lg:text-[0.8rem] max-lg:gap-5'>
-            <li className='hover:text-[#E7EDF3] hover:underline'>
-                <a href="#about">About</a>
-            </li>
-            <li className='hover:text-[#E7EDF3] hover:underline'>
-                <a href="#projects">Projects</a>
-            </li>
-            <li className='hover:text-[#E7EDF3] hover:underline'>
-                <a href="#learning">Learning</a>
-            </li>
-            <li className='hover:text-[#E7EDF3] hover:underline'>
-                <a href="#footer">Contact</a>
-            </li>
-        </ul>
-      </div>
-    </div>
-  )
-}
 
-export default Header
+      <nav>
+        <ul className="flex flex-wrap justify-center gap-4 sm:gap-6 md:gap-10 text-xs sm:text-sm md:text-[1.2rem] text-[#8695A7]">
+          <li className="hover:text-[#E7EDF3] hover:underline">
+            <a href="#about">About</a>
+          </li>
+          <li className="hover:text-[#E7EDF3] hover:underline">
+            <a href="#projects">Projects</a>
+          </li>
+          <li className="hover:text-[#E7EDF3] hover:underline">
+            <a href="#learning">Learning</a>
+          </li>
+          <li className="hover:text-[#E7EDF3] hover:underline">
+            <a href="#footer">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  );
+};
+
+export default Header;
