@@ -67,7 +67,7 @@ const Home = () => {
             </h1>
             <p className="mt-4 sm:mt-6 text-sm sm:text-base lg:text-lg text-[#8695A7] leading-relaxed">
               I like making people's tech problems go away. IT support is where
-              I do that professionally. It's also why I keep a home lab — the
+              I do that professionally. It's also why I keep a home lab the
               more I understand how things actually work, the better I can help
               when they don't.
             </p>
