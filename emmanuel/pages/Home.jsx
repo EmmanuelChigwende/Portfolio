@@ -31,7 +31,7 @@ const Home = () => {
         autoAlpha: 1,
         ease: "power4.out",
         delay: 0.3,
-      }
+      },
     );
 
     gsap.fromTo(
@@ -45,7 +45,7 @@ const Home = () => {
         duration: 2,
         autoAlpha: 1,
         ease: "power4.out",
-      }
+      },
     );
   });
 
@@ -55,7 +55,10 @@ const Home = () => {
       <section id="home" className="pt-10 md:pt-16 pb-16">
         <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           {/* Left Hero Statement */}
-          <div ref={heroleft} className="flex flex-col justify-center order-2 md:order-1">
+          <div
+            ref={heroleft}
+            className="flex flex-col justify-center order-2 md:order-1"
+          >
             <p className="font-extrabold mb-4 md:mb-6 text-sm sm:text-base md:text-lg lg:text-[1.3rem] p-2.5 sm:p-3 w-fit rounded-[10px] bg-[#141F29] text-[#E7EDF3]">
               IT Support Specialist
             </p>
@@ -64,14 +67,17 @@ const Home = () => {
             </h1>
             <p className="mt-4 sm:mt-6 text-sm sm:text-base lg:text-lg text-[#8695A7] leading-relaxed">
               I like making people's tech problems go away. IT support is where
-              I do that professionally. It's also why I keep a home lab — the more
-              I understand how things actually work, the better I can help when
-              they don't.
+              I do that professionally. It's also why I keep a home lab — the
+              more I understand how things actually work, the better I can help
+              when they don't.
             </p>
           </div>
 
           {/* Right Hero Image */}
-          <div ref={heroright} className="flex items-center justify-center order-1 md:order-2">
+          <div
+            ref={heroright}
+            className="flex items-center justify-center order-1 md:order-2"
+          >
             <img
               src={hero}
               alt="Hero portrait"
@@ -99,27 +105,38 @@ const Home = () => {
               About
             </h2>
             <p className="mt-3 sm:mt-4 text-sm sm:text-base lg:text-lg text-[#8695A7] leading-relaxed">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non,
-              perferendis beatae dolore sapiente nesciunt aperiam quis laudantium
-              numquam velit fuga illum voluptatem facere reprehenderit illo quam
-              aut ipsam. Magnam, culpa.
+              I'm Emmanuel, an IT support professional working my way into
+              systems administration and network engineering. I'm currently
+              studying for my CCNA, and I back that up with hands-on practice
+              running a self-hosted home lab on Ubuntu and Docker Compose, and
+              building tools like a React-based subnet calculator to reinforce
+              what I'm learning. I like understanding systems from the ground
+              up, not just the surface fix.
             </p>
 
             <h2 className="mt-6 sm:mt-8 text-2xl sm:text-3xl lg:text-4xl text-[#E7EDF3] font-extrabold">
               Skills
             </h2>
             <p className="mt-3 sm:mt-4 text-sm sm:text-base lg:text-lg text-[#8695A7] leading-relaxed">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat
-              libero magnam cumque at ab voluptatibus ducimus obcaecati,
-              architecto ut omnis aliquid. Dolorum perspiciatis porro soluta, id
-              distinctio officiis eos ad!
+              System administration across Ubuntu Server and Windows Server,
+              including home lab deployment and management with Docker Compose.
+              Hands-on experience running and maintaining self-hosted services
+              like Nextcloud and Vaultwarden, plus server configuration and
+              troubleshooting. Solid networking fundamentals routing,
+              switching, and subnetting currently being deepened through CCNA
+              study. IT support background with Google Workspace and Microsoft
+              365 account administration, and development experience in
+              JavaScript/React.
             </p>
           </div>
         </div>
       </section>
 
       {/* Projects section */}
-      <section id="projects" className="py-12 md:py-20 border-t border-[#141F29]">
+      <section
+        id="projects"
+        className="py-12 md:py-20 border-t border-[#141F29]"
+      >
         <div>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl text-[#E7EDF3] font-extrabold mb-8 md:mb-12">
             Projects
@@ -175,7 +192,9 @@ const Home = () => {
             {/* Project 4 */}
             <div className="group flex flex-col items-center w-full max-w-[280px]">
               <div className="w-full aspect-square bg-[#8695A7]/20 border border-[#8695A7]/30 rounded-[10px] mb-3 flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
-                <span className="text-[#8695A7] text-xs uppercase tracking-wider font-semibold">Placeholder</span>
+                <span className="text-[#8695A7] text-xs uppercase tracking-wider font-semibold">
+                  Placeholder
+                </span>
               </div>
               <p className="text-sm sm:text-base font-bold text-[#E7EDF3] text-center">
                 Coming Soon
@@ -186,7 +205,10 @@ const Home = () => {
       </section>
 
       {/* Learning section */}
-      <section id="learning" className="py-12 md:py-20 border-t border-[#141F29]">
+      <section
+        id="learning"
+        className="py-12 md:py-20 border-t border-[#141F29]"
+      >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 items-center">
           <div className="text-2xl sm:text-3xl lg:text-4xl text-[#E7EDF3] font-extrabold md:text-center">
             <h2>What's Next</h2>
@@ -195,8 +217,8 @@ const Home = () => {
             <p className="text-sm sm:text-base lg:text-lg text-[#8695A7] leading-relaxed">
               I'm working toward the CCNA and using it as the backbone for
               everything else I build, including the subnet calculator above.
-              I'm also looking into routes into network engineering roles abroad,
-              including Germany's Ausbildung system (Fachinformatiker
+              I'm also looking into routes into network engineering roles
+              abroad, including Germany's Ausbildung system (Fachinformatiker
               Systemintegration).
             </p>
           </div>
