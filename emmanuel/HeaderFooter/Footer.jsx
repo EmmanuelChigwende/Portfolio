@@ -4,11 +4,11 @@ import { Cat } from "lucide-react";
 const Footer = () => {
   return (
     <div className=" p-10 flex justify-between items-center">
-      <h1 className="text-[#E7EDF3] text-[1.5rem] font-extrabold">
+      <h1 className="text-[#E7EDF3] text-[1.5rem] font-extrabold max-lg:text-[1rem]">
         Lets talk about a role, project or <br /> connect over the love of the
         game
       </h1>
-      <ul className="text-[#E7EDF3] text-[1.2rem] gap-2">
+      <ul className="text-[#E7EDF3] text-[1.2rem] gap-2 max-lg:text-[1rem]">
         <li className="grid grid-cols-2 gap-5 font-bold">
           <li className="flex gap-2 items-center hover:text-[#8695A7] hover:scale-[1.1]">
             <Mail />
